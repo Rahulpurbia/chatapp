@@ -32,7 +32,7 @@ io.on("connection", (socket) => {
     delete user[socket.id]; //removing the user from io
   });
 });
-var server_port = 5000;
+var server_port = process.env.PORT || 3000;
 http.listen(server_port, () => {
   console.log("listening on *:" + server_port);
 });
