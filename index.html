@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Real time chat application</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="logo">
-            <h1>logo here</h1>
-            <h1>The Real Time chat app</h1>
-        </div>
-        <div class="chatbox">
-
-        </div>
-        <div class="sendmessage">
-            <input type="text" placeholder="Enter your message" name="messageinput">
-            <button type="submit">Send</button>
-        </div>
+      <div class="logo">
+        <h1>logo here</h1>
+        <h1>The Real Time chat app</h1>
+      </div>
+      <div class="chatbox"></div>
+      <div class="sendmessage">
+        <input
+          type="text"
+          placeholder="Enter your message"
+          name="messageinput"
+        />
+        <button type="submit">Send</button>
+      </div>
     </div>
-    <script defer src='http://localhost:8000/socket.io/socket.io.js'></script>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <!--must be before index.js or else will show undefined io as we index.js will start first and wont find io-->
     <script defer src="index.js"></script>
-</body>
-
+  </body>
 </html>

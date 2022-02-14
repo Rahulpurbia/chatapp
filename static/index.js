@@ -1,4 +1,4 @@
-const socket = io("http://localhost:5000");
+const socket = io("http://localhost:3000");
 const chatbox = document.querySelector(".chatbox");
 const button = document.querySelector("button");
 const inputd = document.querySelector('input[name="messageinput"]');
